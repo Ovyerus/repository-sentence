@@ -8,11 +8,22 @@ It started with a stupid idea I had after someone pasted the [LEGO City copypast
 
 ## Usage
 
-Clone or otherwise download the repository and run:
+Clone or otherwise download the repository, and then [generate a new personal access token for GitHub](https://github.com/settings/tokens/new).
+No scopes are needed to access the search API, so just scroll down and click `Generate token`.
+
+Put this token in a `token.json` in this repo with the following structure:
+
+```json
+{
+  "token": "<access token>"
+}
+```
+
+And then run the following commands:
 
 ```bash
 yarn # or `npm install`
-node ./index.js <text> # or yarn start <text> if you really want to.
+node ./index.js <text> # or `yarn start <text>` if you really want to.
 ```
 
 That's about it.  
